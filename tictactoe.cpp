@@ -17,7 +17,7 @@ enum class Symbol { X, O, N };
 //базовый класс игрока
 class AbstractPlayer {
 protected: //инкапсуляция полей
-    Symbol c; //знак текущего игрока
+    Symbol c; //хранит знак текущего игрока
     int row, col; //выбранная клетка для хода
 
 public:
