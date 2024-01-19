@@ -87,7 +87,7 @@ public:
     //делает ход
     void doStep(vector<vector<Symbol>>& board) override {
 
-        //компьютер ходит в любую свободную клетку
+        //опр всех свободных клеток компьютер ходит в любую свободную клетку
         vector<pair<int, int>> freeCells;
         for (int i = 0; i < board.size(); i++) {
             for (int j = 0; j < board[i].size(); j++) {
