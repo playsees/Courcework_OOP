@@ -121,8 +121,8 @@ public:
 template<typename t>
 class TicTacToe : public Display, public Input { //мн. наследование
 private:
-    vector<vector<Symbol>> board; //игровая доска
-    vector<AbstractPlayer*> players; //игроки
+    vector<vector<Symbol>> board; //двумерный массив векторов для хранения состояния игрового поля
+    vector<AbstractPlayer*> players; // вектор указателей для  хранения игроков
     int freeCells; //сколько свободных клеток осталось
     t state; //игра идет (true) или уже закончилась (false)
 
